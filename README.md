@@ -36,12 +36,18 @@ Smart OOD Handling: Contextual mapping for words outside the core dictionary bas
 
 How it works
 The simulator uses a simplified but mathematically honest implementation of the Transformer architecture.
+
 Static Embeddings: Words are initialized based on their 12D semantic traits.
+
 Contextual Shift: As tokens pass through layers, the Attention Mechanism recalculates their positions based on the surrounding context.
+
 Visualization: High-dimensional math is projected into a 3D space using Three.js for intuitive exploration.
 
+
 How to Use
+
 1. Setting the Scene (Sidebar)
+
 Input Phrase: Choose a preset phrase or type your own. This is the sequence the model will "analyze."
 
 Hyperparameters:
@@ -55,7 +61,9 @@ Layer Selection: This is the most important slider. It allows you to travel thro
 Pipeline Controls: Use the Step Forward/Back buttons to follow the mathematical journey of a token from input to prediction.
 
 2. Exploring the Tabs (Workspace)
+
 🗺️ 3D Map (The Heart of the Sim)
+
 This is a 3D projection of the Contextual Embeddings.
 
 Observe the Shift: Move the Layer slider and watch how words physically move in space as they "understand" each other.
@@ -63,6 +71,7 @@ Observe the Shift: Move the Layer slider and watch how words physically move in 
 Interaction: Click on a word sphere to see its 12-Dimensional Semantic Profile (Concrete, Animate, etc.).
 
 📖 3D Dictionary
+
 A massive cloud of 1,000+ words mapped by their base meanings.
 
 Clusters: Look for "clouds" of similar words (e.g., animals, emotions, locations).
@@ -70,6 +79,7 @@ Clusters: Look for "clouds" of similar words (e.g., animals, emotions, locations
 Search: Use the search bar to find specific words and see where they sit in the Italian language landscape.
 
 🔥 Heatmap (Attention Mechanism)
+
 This grid shows the "Relationship Weights" between words.
 
 Reading the grid: If the cell between "Gatto" and "Mangia" is bright, it means the model is using the word "Mangia" to understand "Gatto."
@@ -77,6 +87,7 @@ Reading the grid: If the cell between "Gatto" and "Mangia" is bright, it means t
 Layered Insight: See how attention refocuses as you move through different layers.
 
 🏗️ Pipeline
+
 A technical step-by-step breakdown. Perfect for verifying the math:
 
 Embedding -> Attention -> Add & Norm -> Feed Forward.
@@ -84,6 +95,7 @@ Embedding -> Attention -> Add & Norm -> Feed Forward.
 It includes a Next Token Predictor that suggests the most likely next word based on the 5 included books (Pinocchio, Salgari, etc.).
 
 3. Recommended Experiments
+
 To truly understand how an AI "thinks," try these:
 
 The Context Test: Type a sentence with an ambiguous word. Change the surrounding words and watch (in the 3D Map) if that word's dot moves towards a different cluster.
@@ -93,8 +105,10 @@ The "Salgari" Effect: Type a sentence about the sea or adventure. See if the Tex
 Matrix Sabotage: (Advanced) Try slightly editing the Q, K, or V matrices in the sidebar. You’ll see the Attention Heatmap distort, showing how the "brains" of the AI are wired.
 
 💡 Pro Tip
+
 If a word isn't in the core 1,000-word dictionary, the simulator will use Smart Contextual Mapping. It will "guess" the semantic dimensions of the unknown word by looking at its neighbors
 
 
 Why this exists
+
 This project demonstrates the power of AI-Augmented Development. By using an AI agent as an "orchestrator," I was able to bridge the gap between complex linear algebra, 3D rendering, and linguistic theory in a single afternoon.
