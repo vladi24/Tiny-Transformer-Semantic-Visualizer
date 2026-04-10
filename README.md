@@ -5,6 +5,7 @@ Link: https://vladi24.github.io/Tiny-Transformer-Semantic-Visualizer/
 
 The Project
 Born from a "bored afternoon" and a conversation with an AI agent, this tool was built to deconstruct and visualize the mathematical representation of meaning. It’s a "glass-box" approach to understanding Large Language Models (LLMs), moving away from the "black-box" mystery.
+It was made entirely by codex, with my inputs explaining the structure and the features.
 
 
 Featured Corpus
